@@ -372,7 +372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1136565589}
-  - component: {fileID: 1136565591}
+  - component: {fileID: 1136565590}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -395,7 +395,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1136565591
+--- !u!114 &1136565590
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -574,7 +574,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1136565591}
+        - m_Target: {fileID: 1136565590}
           m_TargetAssemblyTypeName: GetTime, Assembly-CSharp
           m_MethodName: OnClick
           m_Mode: 1
@@ -703,7 +703,7 @@ GameObject:
   - component: {fileID: 1753297161}
   - component: {fileID: 1753297160}
   - component: {fileID: 1753297164}
-  - component: {fileID: 1753297163}
+  - component: {fileID: 1753297165}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -775,7 +775,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1753297161}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: d45ba83b707a7491da1a1a8f13d09dee, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: OnClick1()
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1753297161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -814,18 +826,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753297158}
   m_CullTransparentMesh: 1
---- !u!114 &1753297163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753297158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1f8e35f0130a41978048e1e240effcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1753297164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,7 +843,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1136565591}
+        - m_Target: {fileID: 1136565590}
           m_TargetAssemblyTypeName: GetTime, Assembly-CSharp
           m_MethodName: OnClick1
           m_Mode: 1
@@ -855,6 +855,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1753297165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753297158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45ba83b707a7491da1a1a8f13d09dee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accessKey: AKfycbyncfubC-TmWYnVQhs86Kkc6JhOU4h2HjZeXHGCWsEV76PebZ7SIZMZiAJBEMCKk8h8
 --- !u!1 &2035069978
 GameObject:
   m_ObjectHideFlags: 0

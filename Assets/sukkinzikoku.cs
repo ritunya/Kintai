@@ -23,7 +23,7 @@ public class GetTime : MonoBehaviour
         //コンソールに表示
         Debug.Log(dt);
         string date1 = dt.ToString();
-        //StartCoroutine(PostData("watanabe", date1));
+        StartCoroutine(PostData("watanabe", date1));
     }
     private IEnumerator PostData(string username, string time)
     {
@@ -32,7 +32,7 @@ public class GetTime : MonoBehaviour
         form.AddField("name", username);
         form.AddField("shukkin", time);
 
-        var request = UnityWebRequest.Post("https://script.google.com/macros/s/AKfycbyncfubC-TmWYnVQhs86Kkc6JhOU4h2HjZeXHGCWsEV76PebZ7SIZMZiAJBEMCKk8h8/exec", form);
+        var request = UnityWebRequest.Post(accessKey, form);
 
         yield return request.SendWebRequest();
         //yield return null;
